@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = %q{jonathan.ritchie@orionhealth.com}
 
   spec.summary       = %q{Generic xml editor for iOS and Android projects.}
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-xml_editor"
+  spec.homepage      = "https://github.com/jonathanneilritchie/fastlane-plugin-xml_editor"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
