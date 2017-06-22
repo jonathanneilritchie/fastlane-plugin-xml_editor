@@ -1,3 +1,5 @@
 lane :test do
-  xml_editor
+  testFile = 'fastlane/test.xml'
+  xml_editor(path_to_xml_file: testFile, xml_path: '//document//string', new_value: 'World')
+  xml_editor(path_to_xml_file: testFile, xml_path: '//document//string/@attr', new_value: 'Hello')
 end
