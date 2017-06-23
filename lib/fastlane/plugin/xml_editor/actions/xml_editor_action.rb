@@ -24,7 +24,7 @@ module Fastlane
                 else
                     xml_search_path = params[:xml_path]
                     @doc = Nokogiri::XML(File.open(path_to_file))
-                    element_root = @doc.at_xpath(xml_search_path).content = new_attribute_value
+                    @doc.at_xpath(xml_search_path).content = new_attribute_value
                     File.write(path_to_file, @doc.to_xml)
                     UI.success("XML element value successfully changed!")
                 end

@@ -1,5 +1,16 @@
+testFile = 'fastlane/test.xml'
+
 lane :test do
-  testFile = 'fastlane/test.xml'
   xml_editor(path_to_xml_file: testFile, xml_path: '//document//string', new_value: 'World')
   xml_editor(path_to_xml_file: testFile, xml_path: '//document//string/@attr', new_value: 'Hello')
+end
+
+lane :remove do
+  xml_remove(path_to_xml_file: testFile, xml_path: '//document//string/@attr')
+  xml_remove(path_to_xml_file: testFile, xml_path: '//document//string')
+end
+
+lane :add do
+  xml_add(path_to_xml_file: testFile, xml_path: '//document', new_value: '<string />')
+  xml_set_attribute(path_to_xml_file: testFile, xml_path: '//document//string', attribute_name: 'attr', attribute_value: '')
 end
