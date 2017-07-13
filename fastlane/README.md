@@ -34,6 +34,16 @@ xcode-select --install
 fastlane test
 ```
 
+### remove
+```
+fastlane remove
+```
+
+### add
+```
+fastlane add
+```
+
 
 ----
 
