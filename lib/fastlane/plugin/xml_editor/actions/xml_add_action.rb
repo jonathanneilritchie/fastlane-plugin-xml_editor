@@ -23,7 +23,7 @@ module Fastlane
             end
 
             def self.details
-                "This plugin allows you to remove any element of a standard XML document."
+                "This plugin allows you to add any element of a standard XML document."
             end
 
             def self.available_options
