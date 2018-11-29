@@ -5,12 +5,7 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: xml_add" time="0.213392">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="1: xml_set_attribute" time="0.007283">
+      <testcase classname="fastlane.lanes" name="0: xml_pretty" time="0.003085">
         
       </testcase>
     

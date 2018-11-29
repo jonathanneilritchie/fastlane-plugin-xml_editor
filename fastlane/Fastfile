@@ -14,3 +14,7 @@ lane :add do
   xml_add(path_to_xml_file: testFile, xml_path: '//document', new_value: '<string />')
   xml_set_attribute(path_to_xml_file: testFile, xml_path: '//document//string', attribute_name: 'attr', attribute_value: '')
 end
+
+lane :pretty do
+  xml_pretty(path_to_xml_file: testFile)
+end
