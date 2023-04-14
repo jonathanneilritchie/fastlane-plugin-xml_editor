@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fastlane-plugin-xml_editor (0.3.0)
+    fastlane-plugin-xml_editor (0.4.0)
       nokogiri (~> 1.14.3)
       plist (~> 3.3.0)
 
